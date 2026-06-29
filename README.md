@@ -6,8 +6,7 @@ Card de monitoramento de host para o plugin **HTML Graphics** do Grafana, com da
 
 ## Preview
 
-![Card preview](https://i.imgur.com/placeholder.png)
-> _Substitua pela screenshot do seu painel após a instalação._
+<img width="461" height="201" alt="image" src="https://github.com/user-attachments/assets/7af887f0-5aec-4bb5-9305-c54fd3a24f1a" />
 
 ---
 
