@@ -1,0 +1,88 @@
+<div class="card">
+  <div class="header">
+    <span class="badge-status online" id="ha-status">
+      <span class="ping-dot" id="ping-dot" style="background:#4ade80"></span>
+      <span id="ha-label">PRX-ON</span>
+    </span>
+    <span class="server-name" id="server-name">PEADTMTPI2131</span>
+    <span class="badge-z">Z</span>
+  </div>
+
+  <div class="metrics">
+
+    <!-- CPU -->
+    <div class="metric-cell">
+      <div class="ring-wrap">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g-cpu" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#f0f"/>
+              <stop offset="100%" stop-color="#0cf"/>
+            </linearGradient>
+          </defs>
+          <circle cx="32" cy="32" r="26" fill="none"
+            stroke="rgba(255,255,255,0.07)" stroke-width="5"/>
+          <circle id="ring-cpu" cx="32" cy="32" r="26" fill="none"
+            stroke="url(#g-cpu)" stroke-width="5"
+            stroke-dasharray="163.36" stroke-dashoffset="163.36"
+            stroke-linecap="round"/>
+        </svg>
+        <div class="ring-value" id="val-cpu">—</div>
+      </div>
+      <div class="metric-label">CPU</div>
+    </div>
+
+    <!-- RAM -->
+    <div class="metric-cell">
+      <div class="ring-wrap">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g-ram" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#f0f"/>
+              <stop offset="100%" stop-color="#0cf"/>
+            </linearGradient>
+          </defs>
+          <circle cx="32" cy="32" r="26" fill="none"
+            stroke="rgba(255,255,255,0.07)" stroke-width="5"/>
+          <circle id="ring-ram" cx="32" cy="32" r="26" fill="none"
+            stroke="url(#g-ram)" stroke-width="5"
+            stroke-dasharray="163.36" stroke-dashoffset="163.36"
+            stroke-linecap="round"/>
+        </svg>
+        <div class="ring-value" id="val-ram">—</div>
+      </div>
+      <div class="metric-label">RAM</div>
+    </div>
+
+    <!-- DISCO -->
+    <div class="metric-cell">
+      <div class="ring-wrap">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g-disk" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#f0f"/>
+              <stop offset="100%" stop-color="#0cf"/>
+            </linearGradient>
+          </defs>
+          <circle cx="32" cy="32" r="26" fill="none"
+            stroke="rgba(255,255,255,0.07)" stroke-width="5"/>
+          <circle id="ring-disk" cx="32" cy="32" r="26" fill="none"
+            stroke="url(#g-disk)" stroke-width="5"
+            stroke-dasharray="163.36" stroke-dashoffset="163.36"
+            stroke-linecap="round"/>
+        </svg>
+        <div class="ring-value" id="val-disk">—</div>
+      </div>
+      <div class="metric-label">DISCO</div>
+    </div>
+
+    <!-- PROCESSOS -->
+    <div class="metric-cell">
+      <div class="proc-wrap">
+        <span class="proc-num" id="val-proc">—</span>
+      </div>
+      <div class="metric-label">PROCES</div>
+    </div>
+
+  </div>
+</div>
