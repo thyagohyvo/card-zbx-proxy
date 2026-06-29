@@ -23,7 +23,7 @@ Card de monitoramento de host para o plugin **HTML Graphics** do Grafana, com da
 
 - Processos: verde até 15 / amarelo 16–29 / vermelho 30+
 - Badge **PRX-ON / PRX-OFF** com dot animado refletindo o `agent.ping` do Zabbix
-- Layout 100% responsivo via `vmin` e `clamp()` — sem tamanho fixo
+- Layout 100% responsivo via `vmin` e `clamp()` - sem tamanho fixo
 
 ---
 
@@ -171,8 +171,8 @@ Em `onRender.js`, edite as funções `colorPct` e `colorProc`:
 
 ```js
 function colorPct(pct) {
-  if (pct >= 80) return '#f87171';  // vermelho — crítico
-  if (pct >= 51) return '#fcd34d';  // amarelo  — atenção
+  if (pct >= 80) return '#f87171';  // vermelho - crítico
+  if (pct >= 51) return '#fcd34d';  // amarelo  - atenção
   return '#e0d0ff';                 // normal
 }
 ```
@@ -194,13 +194,13 @@ Em `style.css`, altere o valor `min(12vmin, 90px)` na classe `.ring-wrap`:
 
 O card usa unidades relativas ao viewport do iframe do Grafana:
 
-- `vmin` — relativo ao menor lado do painel; garante que anéis e fontes escalam juntos
-- `clamp(mín, vmin, máx)` — define piso e teto para fontes, evitando texto minúsculo ou gigante
-- O SVG usa `viewBox` fixo (`0 0 64 64`) sem `width`/`height` absolutos — escala via CSS
+- `vmin` - relativo ao menor lado do painel; garante que anéis e fontes escalam juntos
+- `clamp(mín, vmin, máx)` - define piso e teto para fontes, evitando texto minúsculo ou gigante
+- O SVG usa `viewBox` fixo (`0 0 64 64`) sem `width`/`height` absolutos - escala via CSS
 - O `stroke-dasharray` e `stroke-dashoffset` são calculados sobre o raio do `viewBox` (r=26, C≈163.36) e permanecem precisos em qualquer tamanho visual
 
 ---
 
 ## Licença
 
-MIT — livre para uso, modificação e distribuição.
+MIT - sinta-se livre para usar, modificar e distribuir. Se este card te ajudou e você for compartilhar em alguma rede social, blog ou fórum, considere fazer uma referência a este repositório como base. Isso ajuda a comunidade a encontrar o projeto e contribui para que mais pessoas se beneficiem da solução. 🙌 🔗
